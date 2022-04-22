@@ -1,0 +1,8 @@
+(once)=(start)TT
+TTa=T
+TTb=T
+TTc=T
+Ta=aTT
+Tb=bTT
+Tc=cTT
+T=
