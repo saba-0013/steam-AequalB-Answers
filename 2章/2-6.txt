@@ -1,0 +1,50 @@
+aaaaaaa = 7
+aaaaaa = 6
+aaaaa = 5
+aaaa = 4
+aaa = 3
+aa = 2
+a = 1
+
+bbbbbbb = 7
+bbbbbb = 6
+bbbbb = 5
+bbbb = 4
+bbb = 3
+bb = 2
+b = 1
+
+ccccccc = 7
+cccccc = 6
+ccccc = 5
+cccc = 4
+ccc = 3
+cc = 2
+c = 1
+
+
+# 1の個数 >= 2
+11 = (return)false
+121 = (return)false
+1221 = (return)false
+1231 = (return)false
+131 = (return)false
+1321 = (return)false
+141 = (return)false
+151 = (return)false
+
+# 1の個数 = 1
+12 = (return)true
+21 = (return)true
+13 = (return)true
+31 = (return)true
+14 = (return)true
+41 = (return)true
+15 = (return)true
+51 = (return)true
+16 = (return)true
+61 = (return)true
+
+1 = (return)true
+
+ = (return)false
