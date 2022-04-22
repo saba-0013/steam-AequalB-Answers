@@ -1,0 +1,7 @@
+(end)aA=(return)true
+(end)bB=(return)true
+(end)cC=(return)true
+(start)a=(end)A
+(start)b=(end)B
+(start)c=(end)C
+ =(return)false
