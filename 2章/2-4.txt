@@ -1,0 +1,6 @@
+b=a
+c=a
+aaa=
+aa=(return)2
+a=(return)1
+ = (return)0
