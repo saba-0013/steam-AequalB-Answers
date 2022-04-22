@@ -1,0 +1,4 @@
+(once)=(end)X
+0X=1
+1X=X0
+(start)X0=10
