@@ -1,0 +1,4 @@
+ba=ab
+ca=ac
+aaa=(return)true
+ = (return)false
