@@ -1,0 +1,9 @@
+1a=(end)a
+1b=(end)b
+1c=(end)c
+XY=
+(once)=(start)X
+(once)=(end)Y
+Xa=1aaX
+Xb=1bbX
+Xc=1ccX
