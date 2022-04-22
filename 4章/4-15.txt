@@ -1,0 +1,22 @@
+(once) = (start)X
+(start)Xa = aXX
+(start)Xb = bXX
+(start)Xc = cXX
+
+XXXXXXa = aaaaaa
+XXXXXXb = bbbbbb
+XXXXXXc = cccccc
+XXXXXa = aaaaaXXXXXX
+XXXXXb = bbbbbXXXXXX
+XXXXXc = cccccXXXXXX
+XXXXa = aaaaXXXXX
+XXXXb = bbbbXXXXX
+XXXXc = ccccXXXXX
+XXXa = aaaXXXX
+XXXb = bbbXXXX
+XXXc = cccXXXX
+XXa = aaXXX
+XXb = bbXXX
+XXc = ccXXX
+
+X = 
