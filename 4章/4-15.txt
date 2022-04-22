@@ -2,7 +2,6 @@
 (start)Xa = aXX
 (start)Xb = bXX
 (start)Xc = cXX
-
 XXXXXXa = aaaaaa
 XXXXXXb = bbbbbb
 XXXXXXc = cccccc
@@ -18,5 +17,4 @@ XXXc = cccXXXX
 XXa = aaXXX
 XXb = bbXXX
 XXc = ccXXX
-
 X = 
