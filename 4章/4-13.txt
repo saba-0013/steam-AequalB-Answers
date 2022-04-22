@@ -1,0 +1,35 @@
+(once) = (start)V
+(once) = (end)V
+VaV = a
+VbV = b
+VcV = c
+XaX = a
+XbX = b
+XcX = c
+YaY = a
+YbY = b
+YcY = c
+ZaZ = a
+ZbZ = b
+ZcZ = c
+
+(start)Va = X
+(start)Vb = X
+(start)Vc = X
+(end)aV = X
+(end)bV = X
+(end)cV = X
+
+(start)Xa = Y
+(start)Xb = Y
+(start)Xc = Y
+(end)aX = Y
+(end)bX = Y
+(end)cX = Y
+
+(start)Ya = Z
+(start)Yb = Z
+(start)Yc = Z
+(end)aY = Z
+(end)bY = Z
+(end)cY = Z
