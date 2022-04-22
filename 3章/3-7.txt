@@ -1,0 +1,13 @@
+AB=(return)false
+AC=(return)false
+BC=(return)false
+BA=(return)false
+CA=(return)false
+CB=(return)false
+aA=
+bB=
+cC=
+(start)a=(end)A
+(start)b=(end)B
+(start)c=(end)C
+ =(return)true
