@@ -1,0 +1,12 @@
+ba=ab
+ca=ac
+cb=bc
+bc=(end)X
+bX=bb
+cX=cc
+ac=(start)X
+Xc=cc
+ab=(start)X
+Xb=bb
+Xa=aa
+X=
