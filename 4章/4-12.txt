@@ -1,1 +1,7 @@
-
+(once)b=Xbb
+Xb=(end)Y
+cY=Yc
+bY=Yc
+aY=Ya
+Y=
+a=c
