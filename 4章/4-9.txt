@@ -1,1 +1,5 @@
-
+(once)=(start)X
+Xa=bX
+Xb=aX
+Xc=cX
+X=
