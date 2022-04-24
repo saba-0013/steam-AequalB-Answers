@@ -1,8 +1,6 @@
 (once)=(start)X
 XaY=a
 XbY=b
-,Ya=Ya,
-,Yb=Yb,
 aYbX=YbXa
 aYaX=YaXa
 bYaX=YaXb
