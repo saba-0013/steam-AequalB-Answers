@@ -1,1 +1,13 @@
-
+(once)=(start)X
+XaYa=aaX
+XaYb=abX
+XbYa=baX
+XbYb=bbX
+,Ya=Ya,
+,Yb=Yb,
+aYb=Yba
+aYa=Yaa
+bYa=Yab
+bYb=Ybb
+(end)X,=
+,=,Y
