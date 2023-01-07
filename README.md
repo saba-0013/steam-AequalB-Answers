@@ -1,5 +1,8 @@
 # steam-AequalB-Answers
 
+## Feel free to create issues, comment, PR etc...
+- contact at twitter:[@noj0b_twEnty5](https://twitter.com/noj0b_twenty5)
+
 ## steamの大人気ゲーム「A＝B」の解答をまとめておく
 
 各章のフォルダの中に1-1.txtみたいに解答が入ってます。あと進捗.mdも入ってます。  
