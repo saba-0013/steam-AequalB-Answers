@@ -1,10 +1,6 @@
-(once)=(start)X
-XaY=a
-XbY=b
-aYbX=YbXa
-aYaX=YaXa
-bYaX=YaXb
-bYbX=YbXb
-(end)X,=
-,a=YaX,
-,b=YbX,
+(once)=(start)>
+>a=(end)a
+>b=(end)b
+!=(start)>
+>,=
+,=,!>

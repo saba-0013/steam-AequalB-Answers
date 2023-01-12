@@ -1,0 +1,78 @@
+# Structure of the string:
+# <SACC: sum accumulator>
+#  |<MUL1: multiplicand>
+#  *<MUL2: multiplier bit-reversed>
+#  |<PACC: product accumulator>
+
+###### Preprocess the input. ######
+
+# Reverse the bits of the multiplier.
+(once)=(end)%%%%%%%%%%%%%%%% # This accepts 16 (>= 5) bits.
+1%=(end)1
+0%=(end)0
+*%=*
+
+# Put markers to reserve the two accumulators.
+(once)=(start)|
+(once)=(end)|
+
+
+###### Subroutine !: bit addition. ######
+# This should be prepended to SACC to initiate.
+#
+# Implementation:
+# Number of 1's in a given digit is counted with &.
+# We carry && up to the higher bit as &,
+# and convert the remainder to 0 or 1.
+
+!&&=&!
+!&=1
+!=0
+
+
+###### Subroutine >: Move SACC to PACC. ######
+# This should be prepended to SACC to initiate.
+# Move a addition result in SACC back to PACC.
+
+^1=(end)1
+^0=(end)0
+>1=^1>
+>0=^0>
+>&=^1>
+>=
+
+
+###### Subroutine +: addition main loop. ######
+# This should be appended to MUL1 to initiate.
+# Add MUL1 and PACC, and reassign the sum to PACC.
+#
+# This works as follows:
+# 1. SACC := MUL1 + PACC, preserving MUL1 and consuming PACC.
+# 2. Move the value of SACC back to the empty PACC.
+
+0<=
+1<=(start)&
+<=
+j=(end)<
+c=(start)!
+0+=+jc0
+1+=+1<jc1
+# MUL1 exhausted. Since MUL1 >= PACC,
+# we know that PACC also has been exhausted.
++=(start)>
+
+
+###### Main routine *: Multiplication ######
+# Multiplication main loop driven here.
+
+# We iterate over the bits of MUL2, least significant first.
+# PACC + MUL1 * (2 * MUL2) = PACC + (MUL1 * 2) * MUL2
+*0=0*
+# PACC + MUL1 * (1 + MUL2) = (PACC + MUL1) + MUL1 * MUL2
+*1=+*0
+
+# MUL2 exhausted.
+# Clear MUL1 and all the markers.
+0*|=*|
+1*|=*|
+|*|=# empty
