@@ -1,39 +1,61 @@
- (once)=(end)_push-c__push-0__reverse_
+# Structure of the string:
+# <SACC: sum accumulator>
+#  ||<MUL1: multiplicand>
+#  *<MUL2: multiplier bit-reversed>
+#  |<PACC: product accumulator>
 
-# jump
-_push-c_=(start):
-_push-0_=(start)0
-_push-1_=(start)1
-_push-add_=(start)_add_
+# Initialization 1: Reverse MUL2.
+(once)=(end)>>>>>
 
-# Reversing mechanism
-0_n-zero_=_n-zero_0
-1_n-zero_=_n-zero_1
-0_n-one_=_n-one_0
-1_n-one_=_n-one_1
+# Take a bit and send it to SACC.
+0<=
+1<=(start)@
+<=
 
-0_reverse_=_n-zero__reverse_
-1_reverse_=_n-one__reverse_
-_reverse_*=_push-c_0*
+# Teleport < to PACC in order to take a bit there to SACC.
+^=(end)<
 
-# Half adder
-0:_n-zero_=_push-0_:0
-0:_n-one_=_push-1_:1
-1:_n-zero_=_push-1_:0
-1:_n-one_=_push-0__push-add_:1
-:_n-=0:_n-
-::=:
+# Compute bit addition with carry.
+!@@=@!
+!@=1
+!=0
 
-# Carry _add_ to upper digits
-0_add_=1
-1_add_=_add_0
-(start)_add_=1
+# Teleport ! to SACC in order to initiate bit addition.
+?=(start)!
 
-# Multiplication processing
-*_n-zero_=0*
-*_n-one_=_reverse_*
+# Addition main loop.
+# Read a bit from MUL1, take a bit from PACC,
+# and add them in SACC.
+0+=+^?0
+1+=+1<^?1
 
-# End processing
-(end)0*_reverse_=*_reverse_
-(end)1*_reverse_=*_reverse_
-(end):*_reverse_=
+# Reverse and send bits to the rightmost place.
+1>=(end)1
+0>=(end)0
+>=
+
+# Reverse PACC.
+R=(end)>>>>>>>>>>
+
+# Addition main loop termination.
+# Convert any remaining carry mark to one,
+# send the reversed SACC to PACC,
+# and reverse PACC back to the correct order.
+||+=?>>>>>>>>>>R||
+
+# Any unnecessary leading 0s are deleted here.
+|0=|
+
+# Initialization 2
+# Once MUL2 is reversed, create SACC and PACC.
+(once)=(start)||
+(once)=(end)|
+
+# Multiplication main loop.
+*0=0* # X * (Y * 2) = (X * 2) * Y
+*1=+0* # X * (Y * 2 + 1) = X + (X * 2) * Y
+
+# Once our whole computation is done, erase MUL1 and markers.
+# Zeros in MUL1 are deleted by "|0=|" above.
+||1=||
+||*|=
