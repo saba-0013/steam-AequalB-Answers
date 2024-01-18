@@ -1,61 +1,13 @@
-# Structure of the string:
-# <SACC: sum accumulator>
-#  ||<MUL1: multiplicand>
-#  *<MUL2: multiplier bit-reversed>
-#  |<PACC: product accumulator>
-
-# Initialization 1: Reverse MUL2.
-(once)=(end)>>>>>
-
-# Take a bit and send it to SACC.
-0<=
-1<=(start)@
-<=
-
-# Teleport < to PACC in order to take a bit there to SACC.
-^=(end)<
-
-# Compute bit addition with carry.
-!@@=@!
-!@=1
-!=0
-
-# Teleport ! to SACC in order to initiate bit addition.
-?=(start)!
-
-# Addition main loop.
-# Read a bit from MUL1, take a bit from PACC,
-# and add them in SACC.
-0+=+^?0
-1+=+1<^?1
-
-# Reverse and send bits to the rightmost place.
-1>=(end)1
-0>=(end)0
->=
-
-# Reverse PACC.
-R=(end)>>>>>>>>>>
-
-# Addition main loop termination.
-# Convert any remaining carry mark to one,
-# send the reversed SACC to PACC,
-# and reverse PACC back to the correct order.
-||+=?>>>>>>>>>>R||
-
-# Any unnecessary leading 0s are deleted here.
-|0=|
-
-# Initialization 2
-# Once MUL2 is reversed, create SACC and PACC.
-(once)=(start)||
-(once)=(end)|
-
-# Multiplication main loop.
-*0=0* # X * (Y * 2) = (X * 2) * Y
-*1=+0* # X * (Y * 2 + 1) = X + (X * 2) * Y
-
-# Once our whole computation is done, erase MUL1 and markers.
-# Zeros in MUL1 are deleted by "|0=|" above.
-||1=||
-||*|=
+XX1=1XXXX
+XX0=1XX
+*1=*XX
+**=(end)Y0
+*XX=YX*
+*=(start)**
+;=(end)+
+0+=1
+1+=+0
+Y+=Y1
+XXYX=YXXX;
+X=
+Y= 
