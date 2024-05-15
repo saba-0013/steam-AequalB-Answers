@@ -1,11 +1,6 @@
-><=
-a=<d>
->c=c>
-c<=<c
->>d=b>>
-d<<=<<b
->b=<<b>>>
-b<=<<<b>>
-<=
->=
-d=c
+cccccccAccccccccccccccccccccc=b
+cccccccccccccccccccccAccccccc=b
+a=cccccccAccccccc
+cccccccb=cccccccccccccccccccccb
+bccccccc=bccccccccccccccccccccc
+cccccccAccccccc=c

@@ -1,8 +1,7 @@
-][=(return)false
-[a]a=
-[b]b=
-[c]c=
-(end)a=(start)[a]
-(end)b=(start)[b]
-(end)c=(start)[c]
+lala=
+lblb=
+ll=(return)false
+(end)a=(start)lal
+(end)b=(start)lbl
+c=baaaaaab
 =(return)true

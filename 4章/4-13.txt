@@ -1,10 +1,7 @@
-(end)Xa=(return)a
-(end)Xb=(return)b
-(end)Xc=(return)c
-(once)=(start)X
-Xa=(end)X
-Xb=(end)X
-Xc=(end)X
-aX=(start)X
-bX=(start)X
-cX=(start)X
+(once)=llllllllllllllllllllllllllllllllllllllllllllllllllll
+la=(end)a
+lb=(end)b
+lc=(end)c
+(start)a=(return)a
+(start)b=(return)b
+=(return)c

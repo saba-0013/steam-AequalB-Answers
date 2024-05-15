@@ -1,5 +1,4 @@
-(once)=(start)X
-Xa=bX
-Xb=aX
-Xc=cX
-X=
+(once)=ccccccc
+ccccccca=bccccccc
+cccccccb=accccccc
+(once)ccccccc=

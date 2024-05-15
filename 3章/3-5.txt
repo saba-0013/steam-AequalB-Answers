@@ -1,7 +1,6 @@
-(end)aA=(return)true
-(end)bB=(return)true
-(end)cC=(return)true
-(start)a=(end)A
-(start)b=(end)B
-(start)c=(end)C
- =(return)false
+b=|A|
+c=||A
+(start)|=(end)|
+(end)A||=(return)true
+(end)a=(return)true
+=(return)false
