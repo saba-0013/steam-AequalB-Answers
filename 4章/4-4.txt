@@ -1,5 +1,4 @@
-(once)=(end)XXX
-aX=
-bX=Xb
-cX=Xc
-X=
+(once)=(end)cccccccccccccccccccccccc
+acccccccc=
+bcccccccc=ccccccccb
+cccccccc=
