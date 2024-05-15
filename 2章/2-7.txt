@@ -1,8 +1,5 @@
-ba=ab
-cb=bc
 ca=ac
-bc=p
-bp=pb
-ap=
-pc=(return)true
+aaaaaaaaac=
+b=aaaaaaaa
+aaaaaacc=(return)true
 =(return)false
