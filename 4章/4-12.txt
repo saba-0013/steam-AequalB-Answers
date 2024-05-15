@@ -1,7 +1,6 @@
-(once)b=Xbb
-Xb=(start)Y
-Yc=cY
-Yb=bY
-Ya=bY
-Y=
+(once)b=xb
+(once)x=(start)cccccccc
+cccccccca=bcccccccc
+ccccccccb=bcccccccc
 a=c
+(once)cccccccc=
